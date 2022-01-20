@@ -3,7 +3,7 @@ import Login from "./pages/login";
 import User from "./pages/User";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import axios from "axios";
-axios.defaults.baseURL = "https://prashant-nemesis-project.herokuapp.com/";
+axios.defaults.baseURL = process.env.PORT;
 function App() {
   return (
     <Router>
