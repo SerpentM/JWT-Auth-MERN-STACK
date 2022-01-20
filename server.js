@@ -21,7 +21,7 @@ app.use("/api/addusers", auth, require("./routes/api/adduser"));
 app.use("/api/displayuser", auth, require("./routes/api/displayUser"));
 
 //Page Auth
-app.get("/", auth, (req, res) => {
+app.get("/api/auth", auth, (req, res) => {
   res.send(true);
 });
 // Heroku 

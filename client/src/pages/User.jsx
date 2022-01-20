@@ -53,7 +53,7 @@ export default function BasicTabs() {
   });
 
   function auth (){
-    axios.get("/", {
+    axios.get("/api/auth", {
       headers: {
         "x-auth-token": localStorage.getItem("token")
       }
